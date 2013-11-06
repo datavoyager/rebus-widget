@@ -1,0 +1,358 @@
+@CHARSET "UTF-8";
+@media screen {
+  /* line 79, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget {
+    color: #333333;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3b6b82;
+    background-color: #87b3c8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    color: #333;
+    line-height: 20px;
+    padding: 8px;
+  }
+  /* line 85, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget a {
+    color: #3a687d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /* line 89, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget a img {
+    border: 0 none;
+  }
+  /* line 94, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget a:hover {
+    text-decoration: underline;
+  }
+  /* line 98, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget p {
+    margin: 0 0 10px;
+  }
+  /* line 102, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .loading {
+    background: white url(https://www.swan.ac.uk/widgets/images/icons/64x64/ajax.gif) no-repeat center center;
+    height: 64px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+  /* line 108, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .btn {
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    background-color: transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: #dddddd;
+    *background-color: #dddddd;
+    border-color: #aaaaaa #aaaaaa #777777;
+    display: inline-block;
+    *display: inline-block;
+    padding: 4px 14px;
+    outline: 0 none;
+    margin: 4px 0;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #dddddd));
+    background-image: -webkit-linear-gradient(#dddddd, #dddddd);
+    background-image: -moz-linear-gradient(#dddddd, #dddddd);
+    background-image: -o-linear-gradient(#dddddd, #dddddd);
+    background-image: linear-gradient(#dddddd, #dddddd);
+    font-size: 0.75em;
+    padding: 4px 8px;
+  }
+  /* line 112, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .btn img {
+    margin-bottom: -5px;
+  }
+  /* line 117, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget input.btn {
+    font-weight: bold;
+    padding: 6px;
+  }
+  /* line 122, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .toggle {
+    display: none;
+  }
+  /* line 126, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .btn:hover {
+    background-color: #e7e0de;
+    *background-color: #e7e0de;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2eeed), color-stop(80%, #e7e0de));
+    background-image: -webkit-linear-gradient(#f2eeed, #e7e0de 80%);
+    background-image: -moz-linear-gradient(#f2eeed, #e7e0de 80%);
+    background-image: -o-linear-gradient(#f2eeed, #e7e0de 80%);
+    background-image: linear-gradient(#f2eeed, #e7e0de 80%);
+  }
+  /* line 130, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .clearfix {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+  /* line 138, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .container:before,
+  .rebus-course-reading-list-widget .container:after {
+    content: "";
+    display: table;
+  }
+  /* line 143, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .container:after {
+    clear: both;
+  }
+  /* line 147, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .container {
+    zoom: 1;
+  }
+  /* line 151, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .controls {
+    float: right;
+  }
+  /* line 153, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .controls .btn {
+    margin-left: 0.5em;
+  }
+  /* line 156, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .controls .filterList {
+    z-index: 1500;
+  }
+  /* line 159, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .controls .tagList {
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4c4c4c;
+    background-color: #4c4c4c;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 5px 0 5px 5px;
+    -moz-border-radius: 5px 0 5px 5px;
+    -ms-border-radius: 5px 0 5px 5px;
+    -o-border-radius: 5px 0 5px 5px;
+    border-radius: 5px 0 5px 5px;
+    box-shadow: 0 4px 5px #4C4C4C;
+    position: absolute;
+    z-index: 999;
+    padding: 0.5em;
+    white-space: nowrap;
+    text-align: right;
+  }
+  /* line 168, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .controls .tagList a {
+    color: #FFF;
+  }
+  /* line 173, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .ui-icon {
+    height: 16px;
+    width: 16px;
+    background-image: url("https://www.swan.ac.uk/widgets/images/rebus/ui-icons_454545_256x240.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    overflow: hidden;
+  }
+  /* line 182, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .btn .ui-icon {
+    margin-bottom: -3px;
+  }
+  /* line 186, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .ui-icon-triangle-1-e {
+    background-position: -32px -16px;
+  }
+  /* line 190, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .ui-icon-triangle-1-s {
+    background-position: -64px -16px;
+  }
+  /* line 194, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .ui-icon-flag {
+    background-position: -16px -112px;
+  }
+  /* line 198, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .ui-icon-print {
+    background-position: -160px -96px;
+  }
+  /* line 204, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder h3 {
+    margin-top: 4px;
+    font-size: 2em;
+  }
+  /* line 207, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder h3 a {
+    color: #000;
+  }
+  /* line 212, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .listHeader {
+    padding-top: 3em;
+  }
+  /* line 216, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .listHeader:first-child {
+    padding-top: 0;
+  }
+  /* line 220, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list {
+    color: #333333;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3b6b82;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 1em;
+    margin: 1em 0;
+  }
+  /* line 225, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list h4 {
+    margin: 0.5em 0px;
+    padding: 0.5em 1em;
+  }
+  /* line 230, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .item {
+    padding: 1em 0;
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #FFF;
+  }
+  /* line 236, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .item .cover-image {
+    float: left;
+    min-height: 100px;
+    min-width: 100px;
+    text-align: center;
+  }
+  /* line 242, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .item .cover-image img {
+    width: 55px;
+    height: 80px;
+  }
+  /* line 247, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .item .cover-image .format {
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+  /* line 253, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .item .item-data {
+    margin-left: 100px;
+  }
+  /* line 256, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .item .item-data .publish, .rebus-course-reading-list-widget .listHolder .list .item .item-data .article, .rebus-course-reading-list-widget .listHolder .list .item .item-data .note {
+    font-style: italic;
+  }
+  /* line 260, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .item .item-data .tag {
+    background-color: #DDDDDD;
+    border: 1px solid #C8C3C2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 0.5em;
+    text-decoration: none;
+  }
+  /* line 272, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .item:last-child, .rebus-course-reading-list-widget .listHolder .list .item.last, .rebus-course-reading-list-widget .listHolder .list .item.solo {
+    border-bottom: 0 none;
+  }
+  /* line 276, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .listHolder .list .header {
+    padding-right: 1em;
+    background-color: #aac9d8;
+    border-bottom: 0 none;
+  }
+}
+@media print {
+  /* line 289, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .clearfix {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+  /* line 297, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .container:before,
+  .rebus-course-reading-list-widget .container:after {
+    content: "";
+    display: table;
+  }
+  /* line 302, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .container:after {
+    clear: both;
+  }
+  /* line 306, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .container {
+    zoom: 1;
+  }
+  /* line 310, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .item {
+    padding: 1em 0;
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #FFF;
+    display: block !important;
+  }
+  /* line 317, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .item .cover-image {
+    float: left;
+    min-height: 100px;
+    min-width: 100px;
+    text-align: center;
+  }
+  /* line 323, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .item .cover-image img {
+    width: 55px;
+    height: 80px;
+  }
+  /* line 328, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .item .cover-image .format {
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+  /* line 334, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .item .item-data {
+    margin-left: 100px;
+  }
+  /* line 337, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .item .item-data .publish, .rebus-course-reading-list-widget .item .item-data .article, .rebus-course-reading-list-widget .item .item-data .note {
+    font-style: italic;
+  }
+  /* line 343, ../../../scss/rebus/course-reading-list.scss */
+  .rebus-course-reading-list-widget .controls, .rebus-course-reading-list-widget .options, .rebus-course-reading-list-widget a.btn {
+    display: none !important;
+  }
+}

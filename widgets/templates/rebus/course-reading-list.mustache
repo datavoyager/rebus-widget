@@ -1,0 +1,142 @@
+<div id="rebus-reading-list">
+{{#lists}}
+<div class="listHolder">
+    <div class="listHeader container">
+        <div class="controls">
+            <!--<a class="btn" target="new" href="http://swansea.rebuslist.com/rss.php?list_id={{list_id}}"><img src="//www.swan.ac.uk/widgets/images/rebus/icon_rss.png" alt="{{#_}}label_RSS_Feed{{/_}}" />&nbsp;{{#_}}label_RSS{{/_}}</a>-->
+            <a class="admin btn" target="new" href="http://swansea.rebuslist.com/admin/items.php?list_id={{list_id}}">{{#_}}label_Admin{{/_}}</a>
+            <a class="feedback btn" target="new" href="https://ifindforms.swan.ac.uk/Feedback?feedbackId=readinglists&moduleId={{course_identifier}}"><i class="ui-icon ui-icon-flag"></i>&nbsp;{{#_}}label_Feedback{{/_}}</a>
+        </div>
+        <h3>{{list_name}}</h3>
+        <strong>{{#_}}label_module_id{{/_}}:</strong> {{course_identifier}}
+    </div>
+    {{#categoryIsPopulated}}
+    <div class="list container">
+        {{#categories}} 
+            {{#category}} 
+                {{#itemsIsPopulated}}
+                <div class="item header container" data-category="{{title-norm}}">
+                    <h4><span class="ui-icon ui-icon-triangle-1-e"></span>{{_title}} ({{itemsTotal}})</h4>
+                </div>
+                
+                    {{#items}}
+                        {{#item}}
+                        <div class="item {{title-norm}}" data-incategory="{{title-norm}}">
+                            <div class="container">
+                                <div class="cover-image">
+                                
+                                    {{#_cover}}{{/_cover}}
+                                   
+                                     {{#material_type}}
+                                     <br />
+                                     <span class="format">
+                                        {{material_type}}
+                                     </span>
+                                    {{/material_type}}
+                                </div>
+                                <div class="item-data">
+                                    <p>
+                                        <span class="title">
+                                            <strong>
+                                            {{#_title}}{{/_title}}
+                                            </strong>
+                                        </span>
+                
+                                        <br />
+                                        
+                                        {{#secondary_title}}
+                                          <span class="sectitle">{{#_}}label_in{{/_}} {{secondary_title}}{{#edition}}&nbsp;({{edition}}){{/edition}}{{#secondary_authors}}&nbsp;{{#_}}label_by{{/_}}  {{secondary_authors}}{{/secondary_authors}}</span>
+                                          <br />
+                                        {{/secondary_title}}
+                
+                                        {{#authors}}
+                                        <span class="author">                        
+                                            {{authors}}
+                                        </span>
+                                        <br /> 
+                                        {{/authors}}
+                                        
+                                        
+                                        {{#publisher}}
+                                        <span class="publish">
+                                                {{publisher}}&nbsp;
+                                            {{#year}}
+                                                {{year}}
+                                            {{/year}}
+                                        </span>
+                                        <br />
+                                        {{/publisher}}
+                
+                                        <span class="article">
+            
+                                            {{#volume}}
+                                              {{#_}}label_Volume{{/_}} {{volume}}{{#issue}},{{/issue}}&nbsp;
+                                            {{/volume}}
+                                            {{#issue}}
+                                              {{#_}}label_Issue{{/_}} {{issue}}{{#start_page}},{{/start_page}}&nbsp;
+                                            {{/issue}}
+                                            {{#start_page}}
+                                              {{#_}}label_Pages{{/_}}&nbsp;
+                                              {{start_page}}
+                                            {{/start_page}}
+                                            {{#end_page}}
+                                              -&nbsp;{{end_page}}&nbsp;
+                                            {{/end_page}}
+                                            {{^publisher}}
+                                            {{#year}}
+                                                ({{year}})
+                                            {{/year}}
+                                            {{/publisher}}                 
+                                        </span>
+                                    </p>
+                                    
+                                    {{#note}}
+                                        <span class="note"><strong>{{#_}}label_Note{{/_}}:</strong> {{note}}</span>
+                                    {{/note}}
+                                    
+                                    {{#tags}}
+                                        {{#tag}}
+                                        <p>
+                                        <span class="tag btn"><img src="https://www.swan.ac.uk/widgets/images/rebus/icon_tags.png" alt="{{#_}}label_Tag{{/_}}" />&nbsp;{{.}}</span>
+                                        </p>
+                                        {{/tag}}
+                                    {{/tags}}
+                                    
+                                    {{#_safeUrl}}
+                                    {{/_safeUrl}}
+                                    
+                                    {{#_openUrl}}{{/_openUrl}}
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        {{/item}}
+                    {{/items}}
+                    
+                {{/itemsIsPopulated}}
+            {{/category}} 
+        {{/categories}}
+    </div>
+    {{/categoryIsPopulated}}
+    {{^categoryIsPopulated}}
+        <div class="rebus-error">
+            <strong>{{#_}}msg_no_items{{/_}}.</strong>
+        </div>
+    {{/categoryIsPopulated}}
+    </div>
+</div>
+{{/lists}}  
+{{^lists}}
+<div class="listHeader container">
+    <div class="controls">
+        <!--<a class="btn" target="new" href="http://swansea.rebuslist.com/rss.php?list_id={{list_id}}"><img src="//www.swan.ac.uk/widgets/images/rebus/icon_rss.png" alt="{{#_}}label_RSS_Feed{{/_}}" />&nbsp;{{#_}}label_RSS{{/_}}</a>-->
+        <a class="admin btn" target="new" href="http://swansea.rebuslist.com/admin/items.php">{{#_}}label_Admin{{/_}}</a>
+        <a class="feedback btn" target="new" href="https://ifindforms.swan.ac.uk/Feedback?feedbackId=readinglists&moduleId={{course_identifier}}"><i class="ui-icon ui-icon-flag"></i>&nbsp;{{#_}}label_Feedback{{/_}}</a>               
+    </div>
+    <div class="rebus-error">
+        <h3>{{#_}}label_Results{{/_}}</h3>
+        <strong>{{#_}}msg_no_lists{{/_}}.</strong>
+    </div>
+</div>
+{{/lists}}
+</div>
